@@ -1,0 +1,178 @@
+﻿'ReportBuilder2.exe' (CLR v4.0.30319: DefaultDomain): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: DefaultDomain): '\\srvv02\desarrollo$\Nuevo desarrollo\renan\ReportBuilder2\bin\Debug\ReportBuilder2.exe' cargado. Símbolos cargados.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): '\\srvv02\desarrollo$\Nuevo desarrollo\renan\ReportBuilder2\bin\Debug\ObjetoGlobal.dll' cargado. No se encuentra el archivo PDB o no se puede abrir.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms.resources\v4.0_4.0.0.0_es_b77a5c561934e089\System.Windows.Forms.resources.dll' cargado. El módulo se compiló sin símbolos.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.resources\v4.0_4.0.0.0_es_b77a5c561934e089\System.Data.resources.dll' cargado. El módulo se compiló sin símbolos.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.resources\v4.0_4.0.0.0_es_b77a5c561934e089\System.resources.dll' cargado. El módulo se compiló sin símbolos.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.Design.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Design.dll' cargado. Se omitió la carga de símbolos. El módulo está optimizado y la opción del depurador 'Sólo mi código' está habilitada.
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing.resources\v4.0_4.0.0.0_es_b03f5f7f11d50a3a\System.Drawing.resources.dll' cargado. El módulo se compiló sin símbolos.
+El subproceso 0x53e0 terminó con código 0 (0x0).
+El subproceso 0x4ccc terminó con código 0 (0x0).
+El subproceso 0x221c terminó con código 0 (0x0).
+El subproceso 0x4fd8 terminó con código 0 (0x0).
+El subproceso 0x4318 terminó con código 0 (0x0).
+El subproceso 0x4628 terminó con código 0 (0x0).
+El subproceso 0x55ec terminó con código 0 (0x0).
+El subproceso 0x35ec terminó con código 0 (0x0).
+El subproceso 0x1600 terminó con código 0 (0x0).
+El subproceso 0x3d70 terminó con código 0 (0x0).
+El subproceso 0x32bc terminó con código 0 (0x0).
+El subproceso 0x48e4 terminó con código 0 (0x0).
+El subproceso 0x2254 terminó con código 0 (0x0).
+El subproceso 0x4b84 terminó con código 0 (0x0).
+El subproceso 0x55ec terminó con código 0 (0x0).
+El subproceso 0x472c terminó con código 0 (0x0).
+El subproceso 0x4df8 terminó con código 0 (0x0).
+El subproceso 0x4384 terminó con código 0 (0x0).
+El subproceso 0x30fc terminó con código 0 (0x0).
+El subproceso 0x55a0 terminó con código 0 (0x0).
+El subproceso 0x7d4 terminó con código 0 (0x0).
+El subproceso 0x5374 terminó con código 0 (0x0).
+El subproceso 0x429c terminó con código 0 (0x0).
+El subproceso 0x2908 terminó con código 0 (0x0).
+El subproceso 0x4ca4 terminó con código 0 (0x0).
+El subproceso 0x3a7c terminó con código 0 (0x0).
+El subproceso 0x2090 terminó con código 0 (0x0).
+El subproceso 0x5674 terminó con código 0 (0x0).
+El subproceso 0x4cbc terminó con código 0 (0x0).
+El subproceso 0x54c0 terminó con código 0 (0x0).
+El subproceso 0x5498 terminó con código 0 (0x0).
+El subproceso 0x4f4 terminó con código 0 (0x0).
+El subproceso 0x2f64 terminó con código 0 (0x0).
+El subproceso 0x57b8 terminó con código 0 (0x0).
+El subproceso 0x4cd0 terminó con código 0 (0x0).
+El subproceso 0x5604 terminó con código 0 (0x0).
+El subproceso 0x3330 terminó con código 0 (0x0).
+El subproceso 0x4928 terminó con código 0 (0x0).
+El subproceso 0x44f8 terminó con código 0 (0x0).
+El subproceso 0x103c terminó con código 0 (0x0).
+El subproceso 0x5730 terminó con código 0 (0x0).
+El subproceso 0x36d8 terminó con código 0 (0x0).
+El subproceso 0x6e0 terminó con código 0 (0x0).
+El subproceso 0x4ea0 terminó con código 0 (0x0).
+El subproceso 0x46d0 terminó con código 0 (0x0).
+El subproceso 0x1268 terminó con código 0 (0x0).
+El subproceso 0x5528 terminó con código 0 (0x0).
+El subproceso 0x4b68 terminó con código 0 (0x0).
+El subproceso 0x4db4 terminó con código 0 (0x0).
+El subproceso 0x3e68 terminó con código 0 (0x0).
+El subproceso 0x3f2c terminó con código 0 (0x0).
+El subproceso 0x18b4 terminó con código 0 (0x0).
+El subproceso 0x1ec0 terminó con código 0 (0x0).
+El subproceso 0x54d8 terminó con código 0 (0x0).
+El subproceso 0x1e14 terminó con código 0 (0x0).
+El subproceso 0x198c terminó con código 0 (0x0).
+El subproceso 0x5120 terminó con código 0 (0x0).
+El subproceso 0x5278 terminó con código 0 (0x0).
+El subproceso 0x532c terminó con código 0 (0x0).
+El subproceso 0x4c04 terminó con código 0 (0x0).
+El subproceso 0x25bc terminó con código 0 (0x0).
+El subproceso 0x3698 terminó con código 0 (0x0).
+El subproceso 0x2c08 terminó con código 0 (0x0).
+El subproceso 0x54b4 terminó con código 0 (0x0).
+El subproceso 0x5ba0 terminó con código 0 (0x0).
+El subproceso 0x5b40 terminó con código 0 (0x0).
+El subproceso 0x421c terminó con código 0 (0x0).
+El subproceso 0x5bb0 terminó con código 0 (0x0).
+El subproceso 0x4e28 terminó con código 0 (0x0).
+El subproceso 0x43f4 terminó con código 0 (0x0).
+El subproceso 0x566c terminó con código 0 (0x0).
+El subproceso 0x2040 terminó con código 0 (0x0).
+El subproceso 0x3dd4 terminó con código 0 (0x0).
+El subproceso 0x790 terminó con código 0 (0x0).
+El subproceso 0x5994 terminó con código 0 (0x0).
+El subproceso 0x5848 terminó con código 0 (0x0).
+El subproceso 0x21b0 terminó con código 0 (0x0).
+El subproceso 0x5e88 terminó con código 0 (0x0).
+El subproceso 0x5da8 terminó con código 0 (0x0).
+El subproceso 0x5cd8 terminó con código 0 (0x0).
+El subproceso 0x5d64 terminó con código 0 (0x0).
+El subproceso 0x5c80 terminó con código 0 (0x0).
+El subproceso 0x44d0 terminó con código 0 (0x0).
+El subproceso 0x2170 terminó con código 0 (0x0).
+El subproceso 0x4cfc terminó con código 0 (0x0).
+El subproceso 0x43a8 terminó con código 0 (0x0).
+El subproceso 0x161c terminó con código 0 (0x0).
+El subproceso 0x5fac terminó con código 0 (0x0).
+El subproceso 0x45dc terminó con código 0 (0x0).
+El subproceso 0x5dfc terminó con código 0 (0x0).
+El subproceso 0x44fc terminó con código 0 (0x0).
+El subproceso 0x5bc8 terminó con código 0 (0x0).
+El subproceso 0x2fcc terminó con código 0 (0x0).
+El subproceso 0x56a4 terminó con código 0 (0x0).
+El subproceso 0x5200 terminó con código 0 (0x0).
+El subproceso 0x2138 terminó con código 0 (0x0).
+El subproceso 0x5770 terminó con código 0 (0x0).
+El subproceso 0x5f68 terminó con código 0 (0x0).
+El subproceso 0x1e14 terminó con código 0 (0x0).
+El subproceso 0x5cd0 terminó con código 0 (0x0).
+El subproceso 0x53b8 terminó con código 0 (0x0).
+El subproceso 0x4d0c terminó con código 0 (0x0).
+El subproceso 0x310c terminó con código 0 (0x0).
+El subproceso 0x433c terminó con código 0 (0x0).
+El subproceso 0x5e94 terminó con código 0 (0x0).
+El subproceso 0x12d8 terminó con código 0 (0x0).
+El subproceso 0x5718 terminó con código 0 (0x0).
+El subproceso 0x5d5c terminó con código 0 (0x0).
+El subproceso 0x5c9c terminó con código 0 (0x0).
+El subproceso 0x5a58 terminó con código 0 (0x0).
+El subproceso 0x2ea8 terminó con código 0 (0x0).
+El subproceso 0x20d8 terminó con código 0 (0x0).
+El subproceso 0x138c terminó con código 0 (0x0).
+El subproceso 0x58e4 terminó con código 0 (0x0).
+El subproceso 0x44b4 terminó con código 0 (0x0).
+El subproceso 0x5b78 terminó con código 0 (0x0).
+El subproceso 0x259c terminó con código 0 (0x0).
+El subproceso 0x360c terminó con código 0 (0x0).
+El subproceso 0x55c8 terminó con código 0 (0x0).
+El subproceso 0x5418 terminó con código 0 (0x0).
+El subproceso 0x3f7c terminó con código 0 (0x0).
+El subproceso 0x1004 terminó con código 0 (0x0).
+El subproceso 0x5b8c terminó con código 0 (0x0).
+El subproceso 0x43ac terminó con código 0 (0x0).
+El subproceso 0x52dc terminó con código 0 (0x0).
+El subproceso 0x5eb0 terminó con código 0 (0x0).
+El subproceso 0x59f0 terminó con código 0 (0x0).
+El subproceso 0x2df8 terminó con código 0 (0x0).
+El subproceso 0x5234 terminó con código 0 (0x0).
+El subproceso 0x4bec terminó con código 0 (0x0).
+El subproceso 0x24f4 terminó con código 0 (0x0).
+El subproceso 0x1b1c terminó con código 0 (0x0).
+El subproceso 0x58d0 terminó con código 0 (0x0).
+El subproceso 0x37b8 terminó con código 0 (0x0).
+El subproceso 0x53a0 terminó con código 0 (0x0).
+El subproceso 0x2014 terminó con código 0 (0x0).
+El subproceso 0x5d48 terminó con código 0 (0x0).
+El subproceso 0x1024 terminó con código 0 (0x0).
+El subproceso 0x4f80 terminó con código 0 (0x0).
+El subproceso 0x1888 terminó con código 0 (0x0).
+El subproceso 0x25bc terminó con código 0 (0x0).
+El subproceso 0x5700 terminó con código 0 (0x0).
+El subproceso 0x5114 terminó con código 0 (0x0).
+El subproceso 0x3458 terminó con código 0 (0x0).
+El subproceso 0x77c terminó con código 0 (0x0).
+El subproceso 0x2f74 terminó con código 0 (0x0).
+El subproceso 0x1694 terminó con código 0 (0x0).
+El subproceso 0x4338 terminó con código 0 (0x0).
+El subproceso 0x506c terminó con código 0 (0x0).
+El subproceso 0x45b4 terminó con código 0 (0x0).
+El subproceso 0x5934 terminó con código 0 (0x0).
+El subproceso 0x2f94 terminó con código 0 (0x0).
+El subproceso 0x17dc terminó con código 0 (0x0).
+El subproceso 0x6724 terminó con código 0 (0x0).
+El subproceso 0x6794 terminó con código 0 (0x0).
+El subproceso 0x6650 terminó con código 0 (0x0).
+El subproceso 0x2afc terminó con código 0 (0x0).
+'ReportBuilder2.exe' (CLR v4.0.30319: ReportBuilder2.exe): 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_es_b77a5c561934e089\mscorlib.resources.dll' cargado. El módulo se compiló sin símbolos.
+El programa '[17520] ReportBuilder2.exe' terminó con código 0 (0x0).

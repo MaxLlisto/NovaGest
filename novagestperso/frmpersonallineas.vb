@@ -1,0 +1,5 @@
+Imports System.ComponentModel
+
+Public Class frmpersonallineas
+Inherits LibreriaModeloMantenimiento.ModeloMantenimiento
+End Class

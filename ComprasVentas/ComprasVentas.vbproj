@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{772574FD-0411-45AA-9950-1CD85BDBD62D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>novagestventas</RootNamespace>
+    <AssemblyName>novagestventas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Menú\bin\Debug\</OutputPath>
+    <DocumentationFile>novagestventas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>novagestventas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CnEdicion">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="cnFichero">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnFichero.dll</HintPath>
+    </Reference>
+    <Reference Include="cnRecordset, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnRecordset.dll</HintPath>
+    </Reference>
+    <Reference Include="CnTabla">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnTabla.dll</HintPath>
+    </Reference>
+    <Reference Include="CoolPrintPreview_VB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\CoolPrintPreview_VB.dll</HintPath>
+    </Reference>
+    <Reference Include="libcomunes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\libcomunes.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaGeneral, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaGeneral.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaModeloMantenimiento, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaModeloMantenimiento.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.0.3541.23206, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProyectoReport\bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="ObjetoGlobal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\ObjetoGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportBuilder2, Version=1.0.8629.18482, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\ReportBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="ShapeControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\controles\AwesomeShapeControl\bin\Debug\ShapeControl.dll</HintPath>
+    </Reference>
+    <Reference Include="SigPlusNET, Version=2.0.0.42, Culture=neutral, PublicKeyToken=6aef07010bb0624f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\SigPlusNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Textboxbotoncontrol, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\renan\Controles usuarios y utilidades\Textboxboton\TexboxBoton\Textboxbotoncontrol\bin\Debug\Textboxbotoncontrol.dll</HintPath>
+    </Reference>
+    <Reference Include="wwScripting, Version=1.0.8573.30756, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\wwScripting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FechaFactura.Designer.vb">
+      <DependentUpon>FechaFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FechaFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFirmaDocumentos.Designer.vb">
+      <DependentUpon>FrmFirmaDocumentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFirmaDocumentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHacerCaja.Designer.vb">
+      <DependentUpon>FrmHacerCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHacerCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPedidoscompra.designer.vb">
+      <DependentUpon>FrmPedidoscompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPedidoscompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeleccionManipulador.Designer.vb">
+      <DependentUpon>FrmSeleccionManipulador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccionManipulador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVentas.Designer.vb">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FechaFactura.resx">
+      <DependentUpon>FechaFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFirmaDocumentos.resx">
+      <DependentUpon>FrmFirmaDocumentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHacerCaja.resx">
+      <DependentUpon>FrmHacerCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPedidoscompra.resx">
+      <DependentUpon>FrmPedidoscompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccionManipulador.resx">
+      <DependentUpon>FrmSeleccionManipulador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVentas.resx">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarjetas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresorafa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresorafr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresoraal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresoracr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconohombre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calcular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresorafa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arqueo_caja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hacer_caja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hacer_caja1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anularfirma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firmadoyseguir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\continuarsinfirmar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BorraPantalla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguirsinfirmar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheque %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garrapata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GrabarCredito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grabarcontado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

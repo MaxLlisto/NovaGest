@@ -1,0 +1,503 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <ProjectGuid>{C2AC7D06-B0F3-4AD0-B257-644DCC3B7B76}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <MyType>Windows</MyType>
+    <RootNamespace>ReportBuilder2</RootNamespace>
+    <AssemblyName>ReportBuilder2</AssemblyName>
+    <RemoveIntegerChecks>False</RemoveIntegerChecks>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <OptionCompare>Binary</OptionCompare>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <DefineConstants>DEBUG=1,TRACE=1</DefineConstants>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <DefineConstants>TRACE=1</DefineConstants>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\Menú\bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <ItemGroup>
+    <Reference Include="CnEdicion, Version=3.0.8423.23616, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="cnFichero, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnFichero.dll</HintPath>
+    </Reference>
+    <Reference Include="cnRecordset, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnRecordset.dll</HintPath>
+    </Reference>
+    <Reference Include="CnTabla, Version=1.0.8423.23595, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnTabla.dll</HintPath>
+    </Reference>
+    <Reference Include="CoolPrintPreview_VB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\CoolPrintPreview_VB.dll</HintPath>
+    </Reference>
+    <Reference Include="libcomunes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\libcomunes.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaGeneral, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaGeneral.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaModeloMantenimiento">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaModeloMantenimiento.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.0.3541.23206, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data">
+      <HintPath>..\POS4\bin\Debug\mysql.data.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ObjetoGlobal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\ObjetoGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="RemoteLoader, Version=1.0.8539.27957, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\RemoteLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="wwScripting, Version=1.0.8539.27941, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\wwScripting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmScripts.resx">
+      <DependentUpon>FrmScripts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RTBScripts.resx">
+      <DependentUpon>RTBScripts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPropiedadesdocumento.resx">
+      <DependentUpon>FrmPropiedadesdocumento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoformato.resx">
+      <DependentUpon>FrmNuevoformato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmguardarcomo.resx">
+      <DependentUpon>Frmguardarcomo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccionFormato.resx">
+      <DependentUpon>FrmSeleccionFormato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelFormatoImpresion.resx">
+      <DependentUpon>FrmSelFormatoImpresion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor variables.resx">
+      <DependentUpon>Visor variables.vb</DependentUpon>
+    </EmbeddedResource>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="BarcodeFieldItem.vb" />
+    <Compile Include="barcodes\barcodes.vb" />
+    <Compile Include="Abrir informe.Designer.vb">
+      <DependentUpon>Abrir informe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Abrir informe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class RawPrinter.vb" />
+    <Compile Include="CodeFile3.vb" />
+    <Compile Include="FrmScripts.Designer.vb">
+      <DependentUpon>FrmScripts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmScripts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\barcodes1\barcodes1.vb" />
+    <Compile Include="RTBScripts.Designer.vb">
+      <DependentUpon>RTBScripts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RTBScripts.vb" />
+    <Compile Include="FrmPropiedadesdocumento.Designer.vb">
+      <DependentUpon>FrmPropiedadesdocumento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPropiedadesdocumento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoformato.Designer.vb">
+      <DependentUpon>FrmNuevoformato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoformato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmguardarcomo.Designer.vb">
+      <DependentUpon>Frmguardarcomo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmguardarcomo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formatos.vb" />
+    <Compile Include="FrmSelFormatoImpresion.Designer.vb">
+      <DependentUpon>FrmSelFormatoImpresion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelFormatoImpresion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiDatatable.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClsImpresion.vb" />
+    <Compile Include="FrmSeleccionFormato.Designer.vb">
+      <DependentUpon>FrmSeleccionFormato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccionFormato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformesNuevo.vb" />
+    <Compile Include="Module4.vb" />
+    <Compile Include="Module5.vb" />
+    <Compile Include="Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionItems.vb" />
+    <Compile Include="VariablesImpresion.vb" />
+    <Compile Include="Visor variables.Designer.vb">
+      <DependentUpon>Visor variables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visor variables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module3.vb" />
+    <Compile Include="Selecciontablas.Designer.vb">
+      <DependentUpon>Selecciontablas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Selecciontablas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrientedTextLabel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustMsg.Designer.vb">
+      <DependentUpon>CustMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImage.vb" />
+    <Compile Include="DataLabel.vb" />
+    <Compile Include="Designer.Designer.vb">
+      <DependentUpon>Designer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Designer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragOptions.Designer.vb">
+      <DependentUpon>DragOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DragOptions.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DragShapes.Designer.vb">
+      <DependentUpon>DragShapes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DragShapes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Variables.Designer.vb">
+      <DependentUpon>Variables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Variables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionCampos.Designer.vb">
+      <DependentUpon>SeleccionCampos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionCampos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function Evaluator\EvalFunctions.vb" />
+    <Compile Include="Function Evaluator\Evaluator.vb" />
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageItem.vb" />
+    <Compile Include="Item.vb" />
+    <Compile Include="LabelItem.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="BarcodeItem.vb" />
+    <Compile Include="MSConn.vb" />
+    <Compile Include="msgboxx.Designer.vb">
+      <DependentUpon>msgboxx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="msgboxx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MysqlConn.vb" />
+    <Compile Include="ODBCConn.vb" />
+    <Compile Include="PPreview.Designer.vb">
+      <DependentUpon>PPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintClass.vb" />
+    <Compile Include="PrintPreview.Designer.vb">
+      <DependentUpon>PrintPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Report.vb" />
+    <Compile Include="Section.vb" />
+    <Compile Include="SectionDetail.vb" />
+    <Compile Include="SectionGroup.vb" />
+    <Compile Include="shapeItem.vb" />
+    <EmbeddedResource Include="CustMsg.resx">
+      <DependentUpon>CustMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Designer.resx">
+      <DependentUpon>Designer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragOptions.resx">
+      <DependentUpon>DragOptions.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragShapes.resx">
+      <DependentUpon>DragShapes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abrir informe.resx">
+      <DependentUpon>Abrir informe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selecciontablas.resx">
+      <DependentUpon>Selecciontablas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Variables.resx">
+      <DependentUpon>Variables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionCampos.resx">
+      <DependentUpon>SeleccionCampos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msgboxx.resx">
+      <DependentUpon>msgboxx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PPreview.resx">
+      <DependentUpon>PPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreview.resx">
+      <DependentUpon>PrintPreview.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dedo_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dedo_derecha1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dedo_izquiera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar_variable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incluir_variable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir_variables.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas_variable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas_variable1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inc_variable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas_variable2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_ok_accept_apply_1582.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar_variable1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionarimagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salirseleccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionarimagen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seleccionar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addimagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grabarimagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alineas_arriba.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\der.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\posicionpapel.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\posicionpapel1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\posicionpapel11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresora_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grabarimagen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton color.png" />
+  </ItemGroup>
+</Project>

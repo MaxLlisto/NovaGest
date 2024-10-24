@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48D4CFC6-DC10-4823-922C-D6F7EBC0B748}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>novaEntradas</RootNamespace>
+    <AssemblyName>novaEntradas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Menú\bin\Debug\</OutputPath>
+    <DocumentationFile>novaEntradas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>novaEntradas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CnEdicion">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="cnFichero">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnFichero.dll</HintPath>
+    </Reference>
+    <Reference Include="cnRecordset">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnRecordset.dll</HintPath>
+    </Reference>
+    <Reference Include="CnTabla">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnTabla.dll</HintPath>
+    </Reference>
+    <Reference Include="libcomunes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\libcomunes.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaGeneral">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaGeneral.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaModeloMantenimiento, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaModeloMantenimiento.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjetoGlobal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\ObjetoGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportBuilder2, Version=1.0.8634.18890, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\ReportBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Textboxbotoncontrol, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\renan\Controles usuarios y utilidades\Textboxboton\TexboxBoton\Textboxbotoncontrol\bin\Debug\Textboxbotoncontrol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmNEntradasNuevo12t.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo12t.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo12t.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEntradaAlbaranes.Designer.vb">
+      <DependentUpon>FrmEntradaAlbaranes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEntradaAlbaranes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo00.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo00.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo00.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo01.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo01T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo01T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo01T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo02.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo03.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo03.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo04.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo04.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo05.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo05.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo06.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo06.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo06.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo06T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo06T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo06T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo07.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo07.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo07.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo08.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo08.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo08.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo08T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo08T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo08T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo09.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo09.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo09.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo09T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo09T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo09T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo10.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo10T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo10T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo10T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo11.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo11T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo11T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo11T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo12.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo12.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo12.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo13.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo13.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo13.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo13t.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo13t.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo13t.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo14.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo14.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo14.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo14T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo14T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo14T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo15.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo15.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo15.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo15T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo15T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo15T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo16.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo16.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo16.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo16T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo16T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo16T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo18.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo18.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo18.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo19.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo19.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo19.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo20.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo20.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo20.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo20t.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo20t.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo20t.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo21.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo21.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo21.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo22.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo22.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo22.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo22t.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo22t.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo22t.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funciones.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo02T.Designer.vb">
+      <DependentUpon>FrmNEntradasNuevo02T.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNEntradasNuevo02T.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmNEntradasNuevo12t.resx">
+      <DependentUpon>FrmNEntradasNuevo12t.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEntradaAlbaranes.resx">
+      <DependentUpon>FrmEntradaAlbaranes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo00.resx">
+      <DependentUpon>FrmNEntradasNuevo00.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo01.resx">
+      <DependentUpon>FrmNEntradasNuevo01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo01T.resx">
+      <DependentUpon>FrmNEntradasNuevo01T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo02.resx">
+      <DependentUpon>FrmNEntradasNuevo02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo03.resx">
+      <DependentUpon>FrmNEntradasNuevo03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo04.resx">
+      <DependentUpon>FrmNEntradasNuevo04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo05.resx">
+      <DependentUpon>FrmNEntradasNuevo05.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo06.resx">
+      <DependentUpon>FrmNEntradasNuevo06.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo06T.resx">
+      <DependentUpon>FrmNEntradasNuevo06T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo07.resx">
+      <DependentUpon>FrmNEntradasNuevo07.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo08.resx">
+      <DependentUpon>FrmNEntradasNuevo08.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo08T.resx">
+      <DependentUpon>FrmNEntradasNuevo08T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo09.resx">
+      <DependentUpon>FrmNEntradasNuevo09.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo09T.resx">
+      <DependentUpon>FrmNEntradasNuevo09T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo10.resx">
+      <DependentUpon>FrmNEntradasNuevo10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo10T.resx">
+      <DependentUpon>FrmNEntradasNuevo10T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo11.resx">
+      <DependentUpon>FrmNEntradasNuevo11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo11T.resx">
+      <DependentUpon>FrmNEntradasNuevo11T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo12.resx">
+      <DependentUpon>FrmNEntradasNuevo12.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo13.resx">
+      <DependentUpon>FrmNEntradasNuevo13.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo13t.resx">
+      <DependentUpon>FrmNEntradasNuevo13t.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo14.resx">
+      <DependentUpon>FrmNEntradasNuevo14.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo14T.resx">
+      <DependentUpon>FrmNEntradasNuevo14T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo15.resx">
+      <DependentUpon>FrmNEntradasNuevo15.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo15T.resx">
+      <DependentUpon>FrmNEntradasNuevo15T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo16.resx">
+      <DependentUpon>FrmNEntradasNuevo16.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo16T.resx">
+      <DependentUpon>FrmNEntradasNuevo16T.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo18.resx">
+      <DependentUpon>FrmNEntradasNuevo18.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo19.resx">
+      <DependentUpon>FrmNEntradasNuevo19.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo20.resx">
+      <DependentUpon>FrmNEntradasNuevo20.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo20t.resx">
+      <DependentUpon>FrmNEntradasNuevo20t.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo21.resx">
+      <DependentUpon>FrmNEntradasNuevo21.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo22.resx">
+      <DependentUpon>FrmNEntradasNuevo22.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo22t.resx">
+      <DependentUpon>FrmNEntradasNuevo22t.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNEntradasNuevo02T.resx">
+      <DependentUpon>FrmNEntradasNuevo02T.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etiquetas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plaga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caqui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alba3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alba2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clasificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NuevoAlbaranTerceros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NuevoAlbaran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tocar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elecciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gomadeborrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiocampo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiotara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesocuadrilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reclamacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Industria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dividir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transportista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Defectoscitricos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liquidacionentregada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadrilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiodefectos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telefono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiopeso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gomadeborrar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheque %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salirpersona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grabar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\distribuirico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeProvaDef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importar01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMUNICADO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMUNICADO.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMUNICADO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

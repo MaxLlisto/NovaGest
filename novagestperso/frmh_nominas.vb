@@ -1,0 +1,5 @@
+Imports System.ComponentModel
+
+Public Class frmh_nominas
+Inherits LibreriaModeloMantenimiento.ModeloMantenimiento
+End Class

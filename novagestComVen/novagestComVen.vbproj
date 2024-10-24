@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F519594B-8FDC-4EFB-921C-822900463974}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>novagestComVen</RootNamespace>
+    <AssemblyName>novagestComVen</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Menú\bin\Debug\</OutputPath>
+    <DocumentationFile>novagestComVen.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>novagestComVen.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CnEdicion">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="cnFichero">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnFichero.dll</HintPath>
+    </Reference>
+    <Reference Include="cnRecordset">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnRecordset.dll</HintPath>
+    </Reference>
+    <Reference Include="CnTabla">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnTabla.dll</HintPath>
+    </Reference>
+    <Reference Include="CoolPrintPreview_VB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\CoolPrintPreview_VB.dll</HintPath>
+    </Reference>
+    <Reference Include="libcomunes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\preparar dlls\LibComunes\bin\Debug\libcomunes.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaGeneral">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaGeneral.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaModeloMantenimiento">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaModeloMantenimiento.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.0.3541.23206, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ProyectoReport\bin\Debug\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="ObjetoGlobal">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\ObjetoGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Textboxbotoncontrol, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\renan\Controles usuarios y utilidades\Textboxboton\TexboxBoton\Textboxbotoncontrol\bin\Debug\Textboxbotoncontrol.dll</HintPath>
+    </Reference>
+    <Reference Include="wwScripting, Version=1.0.8573.30756, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\wwScripting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmArticulosConsumo.designer.vb">
+      <DependentUpon>FrmArticulosConsumo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmArticulosConsumo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutorizaciones.Designer.vb">
+      <DependentUpon>FrmAutorizaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutorizaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarnetManipulador.Designer.vb">
+      <DependentUpon>FrmCarnetManipulador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCarnetManipulador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEtiquetasTrazabM.designer.vb">
+      <DependentUpon>FrmEtiquetasTrazabM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEtiquetasTrazabM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHcoCalidadProv.designer.vb">
+      <DependentUpon>FrmHcoCalidadProv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHcoCalidadProv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrevisionComprasCoop.designer.vb">
+      <DependentUpon>FrmPrevisionComprasCoop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrevisionComprasCoop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmArticulosConsumo.resx">
+      <DependentUpon>FrmArticulosConsumo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutorizaciones.resx">
+      <DependentUpon>FrmAutorizaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCarnetManipulador.resx">
+      <DependentUpon>FrmCarnetManipulador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEtiquetasTrazabM.resx">
+      <DependentUpon>FrmEtiquetasTrazabM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHcoCalidadProv.resx">
+      <DependentUpon>FrmHcoCalidadProv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrevisionComprasCoop.resx">
+      <DependentUpon>FrmPrevisionComprasCoop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imp_etiquetas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReportBuilder2\ReportBuilder2.vbproj">
+      <Project>{C2AC7D06-B0F3-4AD0-B257-644DCC3B7B76}</Project>
+      <Name>ReportBuilder2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34DA3D18-F391-4B41-864F-A77CC19554FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>novagestinfconta</RootNamespace>
+    <AssemblyName>novagestinfconta</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Menú\bin\Debug\</OutputPath>
+    <DocumentationFile>novagestinfconta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>novagestinfconta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CnEdicion">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="cnFichero">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnFichero.dll</HintPath>
+    </Reference>
+    <Reference Include="cnRecordset">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnRecordset.dll</HintPath>
+    </Reference>
+    <Reference Include="CnTabla">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnTabla.dll</HintPath>
+    </Reference>
+    <Reference Include="libcomunes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\libcomunes.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaGeneral">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaGeneral.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaModeloMantenimiento, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaModeloMantenimiento.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjetoGlobal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\ObjetoGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportBuilder2, Version=1.0.8472.30958, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Menú\bin\Debug\ReportBuilder2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Textboxbotoncontrol, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\renan\Controles usuarios y utilidades\Textboxboton\TexboxBoton\Textboxbotoncontrol\bin\Debug\Textboxbotoncontrol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDiario.Designer.vb">
+      <DependentUpon>FrmDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBalSituacion.Designer.vb">
+      <DependentUpon>FrmBalSituacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBalSituacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SeleccionAsientos.Designer.vb">
+      <DependentUpon>SeleccionAsientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionAsientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmDiario.resx">
+      <DependentUpon>FrmDiario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBalSituacion.resx">
+      <DependentUpon>FrmBalSituacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionAsientos.resx">
+      <DependentUpon>SeleccionAsientos.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vistaprevia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vprevia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textview_view_search_find_11040.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XLS_File_24266.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mbriprint_99560.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresora_ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_ok_accept_apply_1582.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar_variable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impresora_ico1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vprevia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textview_view_search_find_110401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descheque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

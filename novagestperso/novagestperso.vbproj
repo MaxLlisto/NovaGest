@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB46AFD1-5057-41B7-908F-E53CCF331305}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>novagestperso</RootNamespace>
+    <AssemblyName>novagestperso</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Menú\bin\Debug\</OutputPath>
+    <DocumentationFile>novagestperso.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>novagestperso.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CnEdicion">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="cnFichero">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnFichero.dll</HintPath>
+    </Reference>
+    <Reference Include="cnRecordset">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnRecordset.dll</HintPath>
+    </Reference>
+    <Reference Include="CnTabla">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnTabla.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaGeneral">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaGeneral.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaModeloMantenimiento, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaModeloMantenimiento.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjetoGlobal">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\ObjetoGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accesospersonal.designer.vb">
+      <DependentUpon>Accesospersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Accesospersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambiosLineas.designer.vb">
+      <DependentUpon>FrmCambiosLineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambiosLineas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmErroresMarcajes.Designer.vb" />
+    <Compile Include="FrmErroresMarcajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmhcofichadas.Designer.vb">
+      <DependentUpon>frmhcofichadas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmhcofichadas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmh_nominas.designer.vb">
+      <DependentUpon>frmh_nominas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmh_nominas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlineas.designer.vb">
+      <DependentUpon>frmlineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlineas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmarcajes.designer.vb">
+      <DependentUpon>Frmmarcajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmmarcajes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOperarios_coop.Designer.vb">
+      <DependentUpon>FrmOperarios_coop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperarios_coop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpersonallineas.designer.vb">
+      <DependentUpon>frmpersonallineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmpersonallineas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpersonalpuestos.Designer.vb">
+      <DependentUpon>Frmpersonalpuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpersonalpuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpersonal_es.designer.vb">
+      <DependentUpon>Frmpersonal_es.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpersonal_es.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtiposoperario.designer.vb">
+      <DependentUpon>frmtiposoperario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtiposoperario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accesospersonal.resx">
+      <DependentUpon>Accesospersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambiosLineas.resx">
+      <DependentUpon>FrmCambiosLineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmErroresMarcajes.resx">
+      <DependentUpon>FrmErroresMarcajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmhcofichadas.resx">
+      <DependentUpon>frmhcofichadas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmh_nominas.resx">
+      <DependentUpon>frmh_nominas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlineas.resx">
+      <DependentUpon>frmlineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmarcajes.resx">
+      <DependentUpon>Frmmarcajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperarios_coop.resx">
+      <DependentUpon>FrmOperarios_coop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpersonallineas.resx">
+      <DependentUpon>frmpersonallineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpersonalpuestos.resx">
+      <DependentUpon>Frmpersonalpuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpersonal_es.resx">
+      <DependentUpon>Frmpersonal_es.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtiposoperario.resx">
+      <DependentUpon>frmtiposoperario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

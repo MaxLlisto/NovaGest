@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42506DEC-4F11-49E3-B74E-62141150E49E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>Novagestvarios</RootNamespace>
+    <AssemblyName>NovaGestVarios</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Menú\bin\Debug\</OutputPath>
+    <DocumentationFile>NovaGestVarios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NovaGestVarios.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CnEdicion">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="cnFichero">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnFichero.dll</HintPath>
+    </Reference>
+    <Reference Include="cnRecordset">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnRecordset.dll</HintPath>
+    </Reference>
+    <Reference Include="CnTabla">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnTabla.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Interop.Excel">
+      <HintPath>..\..\..\__NovaGest_8\_DLLS externas\Interop.Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Office">
+      <HintPath>..\..\..\__NovaGest_8\_DLLS externas\Interop.Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.wgssSTU">
+      <HintPath>..\..\..\renan\Visitas\TestDemoButtons\Interop.wgssSTU.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="libcomunes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\libcomunes.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaGeneral">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaGeneral.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaModeloMantenimiento, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaModeloMantenimiento.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjetoGlobal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\ObjetoGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\..\renan\Visitas\_DLLS\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Textboxbotoncontrol">
+      <HintPath>..\..\..\renan\Controles usuarios y utilidades\Textboxboton\TexboxBoton\Textboxbotoncontrol\bin\Debug\Textboxbotoncontrol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="balance_de_masas.Designer.vb">
+      <DependentUpon>balance_de_masas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="balance_de_masas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClonarBulto.Designer.vb">
+      <DependentUpon>ClonarBulto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClonarBulto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlCamaras.designer.vb">
+      <DependentUpon>ControlCamaras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlCamaras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlasticonoreciclado.Designer.vb">
+      <DependentUpon>FrmPlasticonoreciclado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlasticonoreciclado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjustarclasificaciones.Designer.vb">
+      <DependentUpon>FrmAjustarclasificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjustarclasificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClasificacionfruta.Designer.vb">
+      <DependentUpon>FrmClasificacionfruta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClasificacionfruta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcomprobacionretenciones.Designer.vb">
+      <DependentUpon>frmcomprobacionretenciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcomprobacionretenciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPesonoreciclado.designer.vb">
+      <DependentUpon>FrmPesonoreciclado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPesonoreciclado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visitas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visitas.Designer.vb">
+      <DependentUpon>visitas.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SalidasCooperativa.designer.vb">
+      <DependentUpon>SalidasCooperativa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalidasCooperativa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignatureForm.designer.vb">
+      <DependentUpon>SignatureForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignatureForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="balance_de_masas.resx">
+      <DependentUpon>balance_de_masas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClonarBulto.resx">
+      <DependentUpon>ClonarBulto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlCamaras.resx">
+      <DependentUpon>ControlCamaras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlasticonoreciclado.resx">
+      <DependentUpon>FrmPlasticonoreciclado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjustarclasificaciones.resx">
+      <DependentUpon>FrmAjustarclasificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClasificacionfruta.resx">
+      <DependentUpon>FrmClasificacionfruta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcomprobacionretenciones.resx">
+      <DependentUpon>frmcomprobacionretenciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPesonoreciclado.resx">
+      <DependentUpon>FrmPesonoreciclado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visitas.resx">
+      <DependentUpon>visitas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalidasCooperativa.resx">
+      <DependentUpon>SalidasCooperativa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignatureForm.resx">
+      <DependentUpon>SignatureForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="resources\subir datos.png" />
+    <None Include="resources\borrardatos.png" />
+    <None Include="resources\eliminar.png" />
+    <None Include="resources\clonar.png" />
+    <None Include="resources\excel1.png" />
+    <None Include="resources\cocinando.png" />
+    <None Include="resources\cheque.png" />
+    <None Include="resources\descheque.png" />
+    <None Include="resources\contenedor_plastico.png" />
+    <None Include="resources\contenedor_plasticos.png" />
+    <None Include="resources\ext_csv_filetype_icon_176252.png" />
+    <None Include="resources\ext_csv_ico.png" />
+    <None Include="resources\desglose.png" />
+    <None Include="resources\camaravacia.png" />
+    <Content Include="resources\cargando-loading-001.gif" />
+    <Content Include="resources\cargando-loading-007.gif" />
+    <Content Include="resources\cargando-loading-026.gif" />
+    <Content Include="resources\cargando-loading-028.gif" />
+    <Content Include="resources\cargando-loading-030.gif" />
+    <Content Include="resources\cargando-loading-031.gif" />
+    <Content Include="resources\cargando-loading-035.gif" />
+    <Content Include="resources\FIRMADO.png" />
+    <Content Include="resources\FIRMADO1.png" />
+    <None Include="resources\maquina-elevadora.png" />
+    <None Include="resources\recarga.png" />
+    <None Include="resources\mover-datos.png" />
+    <Content Include="resources\icons8-buscar-chat-50.png" />
+    <Content Include="resources\icons8-ms-excel-64.png" />
+    <Content Include="resources\puerta3.png" />
+    <Content Include="resources\salirpersona.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

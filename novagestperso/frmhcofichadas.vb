@@ -1,0 +1,5 @@
+Imports System.ComponentModel
+
+Public Class frmhcofichadas
+Inherits LibreriaModeloMantenimiento.ModeloMantenimiento
+End Class

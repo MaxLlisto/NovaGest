@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDAE4CC7-11CF-4D5A-B63A-2074251FA8B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>novagestConfec</RootNamespace>
+    <AssemblyName>novagestConfec</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\Menú\bin\Debug\</OutputPath>
+    <DocumentationFile>novagestConfec.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>novagestConfec.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CnEdicion">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnEdicion.dll</HintPath>
+    </Reference>
+    <Reference Include="cnFichero">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnFichero.dll</HintPath>
+    </Reference>
+    <Reference Include="cnRecordset">
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\cnRecordset.dll</HintPath>
+    </Reference>
+    <Reference Include="CnTabla, Version=1.0.8594.22605, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\CnTabla.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.bpac">
+      <HintPath>..\..\_OTRAS DLL\Interop.bpac.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="libcomunes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\preparar dlls\LibComunes\bin\Debug\libcomunes.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaGeneral, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaGeneral.dll</HintPath>
+    </Reference>
+    <Reference Include="LibreriaModeloMantenimiento, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\LibreriaModeloMantenimiento.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjetoGlobal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\__NovaGest_ID\_DLLS\ObjetoGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Textboxbotoncontrol, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\renan\Controles usuarios y utilidades\Textboxboton\TexboxBoton\Textboxbotoncontrol\bin\Debug\Textboxbotoncontrol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAnotarRestos.Designer.vb">
+      <DependentUpon>FrmAnotarRestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnotarRestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambioConfeccion.Designer.vb">
+      <DependentUpon>FrmCambioConfeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambioConfeccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosComplementariosOrden.Designer.vb">
+      <DependentUpon>FrmDatosComplementariosOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosComplementariosOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDestruirPalet.Designer.vb">
+      <DependentUpon>FrmDestruirPalet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDestruirPalet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDuplicarOC.Designer.vb">
+      <DependentUpon>FrmDuplicarOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDuplicarOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenesCarga.designer.vb">
+      <DependentUpon>FrmOrdenesCarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenesCarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelacioneOrdenConfeccion.Designer.vb">
+      <DependentUpon>frmRelacioneOrdenConfeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelacioneOrdenConfeccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRepaletizacionMateriales.Designer.vb">
+      <DependentUpon>FrmRepaletizacionMateriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRepaletizacionMateriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrnOrdenesconfeccion.designer.vb">
+      <DependentUpon>FrnOrdenesconfeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrnOrdenesconfeccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAnotarRestos.resx">
+      <DependentUpon>FrmAnotarRestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambioConfeccion.resx">
+      <DependentUpon>FrmCambioConfeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosComplementariosOrden.resx">
+      <DependentUpon>FrmDatosComplementariosOrden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDestruirPalet.resx">
+      <DependentUpon>FrmDestruirPalet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDuplicarOC.resx">
+      <DependentUpon>FrmDuplicarOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenesCarga.resx">
+      <DependentUpon>FrmOrdenesCarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelacioneOrdenConfeccion.resx">
+      <DependentUpon>frmRelacioneOrdenConfeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRepaletizacionMateriales.resx">
+      <DependentUpon>FrmRepaletizacionMateriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrnOrdenesconfeccion.resx">
+      <DependentUpon>FrnOrdenesconfeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\destruirpalet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salirpersona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palet_lleno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repaletizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\romperpalet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documento %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cambiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheque %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oklista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\palet_carga.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

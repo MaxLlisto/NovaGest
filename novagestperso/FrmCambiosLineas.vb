@@ -1,0 +1,5 @@
+Imports System.ComponentModel
+
+Public Class FrmCambiosLineas
+Inherits LibreriaModeloMantenimiento.ModeloMantenimiento
+End Class
